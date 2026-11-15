@@ -1,0 +1,237 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Focus Space — пространство внимания</title>
+
+    <meta name="description" content="Focus Space — пространство для практики внимания, развития рабочей памяти и изучения СДВГ.">
+
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- ШАПКА САЙТА -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="{% url 'home' %}" class="logo">
+                <span class="logo-icon">f.</span>
+                <span>Focus Space</span>
+            </a>
+
+            <nav class="navigation">
+                <a href="#trainings">Тренировки</a>
+                <a href="#about">О СДВГ</a>
+                <a href="#project">О проекте</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ПРИВЕТСТВЕННЫЙ БЛОК -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="eyebrow">
+                        ПРОСТРАНСТВО ДЛЯ ТВОЕГО ВНИМАНИЯ
+                    </span>
+
+                    <h1>
+                        Найди свой<br>
+                        <span>фокус.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Место, где можно лучше понять особенности
+                        своего внимания, тренировать память и
+                        узнавать больше о СДВГ.
+                    </p>
+
+                    <a href="#trainings" class="primary-button">
+                        Начать исследовать
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-visual">
+
+                    <div class="visual-circle circle-one"></div>
+                    <div class="visual-circle circle-two"></div>
+
+                    <div class="visual-card">
+                        <span class="visual-label">ТВОЁ ПРОСТРАНСТВО</span>
+
+                        <div class="visual-symbol">✳</div>
+
+                        <p>
+                            Маленькие шаги.<br>
+                            Большое внимание.
+                        </p>
+                    </div>
+
+                    <div class="floating-dot dot-one"></div>
+                    <div class="floating-dot dot-two"></div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ОСНОВНЫЕ РАЗДЕЛЫ -->
+        <section class="sections" id="trainings">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">ИССЛЕДУЙ И ПРАКТИКУЙСЯ</span>
+
+                    <h2>С чего начнём?</h2>
+
+                    <p>
+                        Выбирай то, что интересно именно сейчас.
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+
+                    <!-- КАРТОЧКА ТРЕНИРОВОК -->
+                    <article class="feature-card training-card">
+
+                        <div class="card-top">
+                            <span class="card-category">ПРАКТИКА</span>
+                            <span class="card-icon">◎</span>
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Тренировки</h3>
+
+                            <p>
+                                Интерактивные упражнения для практики
+                                концентрации внимания и рабочей памяти.
+                                Исследуй свои возможности в комфортном темпе.
+                            </p>
+
+                            <a href="#project" class="card-link">
+                                Скоро здесь будут упражнения
+                                <span>→</span>
+                            </a>
+                        </div>
+
+                        <div class="card-decoration decoration-training">
+                            ✳
+                        </div>
+
+                    </article>
+
+                    <!-- КАРТОЧКА ИНФОРМАЦИИ О СДВГ -->
+                    <article class="feature-card info-card" id="about">
+
+                        <div class="card-top">
+                            <span class="card-category">ЗНАНИЯ</span>
+                            <span class="card-icon">✳</span>
+                        </div>
+
+                        <div class="card-content">
+                            <h3>О СДВГ</h3>
+
+                            <p>
+                                Понятные статьи о синдроме дефицита
+                                внимания и гиперактивности, особенностях
+                                работы мозга и повседневной жизни.
+                            </p>
+
+                            <a href="#project" class="card-link">
+                                Скоро здесь будут статьи
+                                <span>→</span>
+                            </a>
+                        </div>
+
+                        <div class="card-decoration decoration-info">
+                            ◌
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- О ПРОЕКТЕ -->
+        <section class="about-project" id="project">
+
+            <div class="container about-content">
+
+                <div class="about-marker">
+                    <span>01</span>
+                    <div></div>
+                    <span>FOCUS SPACE</span>
+                </div>
+
+                <div class="about-text">
+
+                    <h2>
+                        Не нужно быть<br>
+                        <span>идеально</span> собранным.
+                    </h2>
+
+                    <p>
+                        Focus Space — образовательный проект,
+                        созданный для людей с СДВГ и тех, кто хочет
+                        больше узнать об особенностях внимания.
+                    </p>
+
+                    <p>
+                        Здесь мы объединяем практические упражнения
+                        и полезную информацию, чтобы сделать изучение
+                        собственных особенностей более доступным
+                        и интересным.
+                    </p>
+
+                </div>
+
+                <div class="about-decoration">
+                    <span>focus</span>
+                    <span>at your own pace</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="{% url 'home' %}" class="logo footer-logo">
+                <span class="logo-icon">f.</span>
+                <span>Focus Space</span>
+            </a>
+
+            <p>
+                Пространство, где можно быть собой.
+            </p>
+
+            <span class="copyright">
+                © 2026 Focus Space. Учебный проект.
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
